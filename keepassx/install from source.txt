@@ -1,0 +1,22 @@
+links:
+
+* https://dev.keepassx.org/projects/keepassx/wiki/Install_instructions
+
+required packages:
+
+* build-essential
+* cmake
+* libqt4-dev
+* libgcrypt-dev
+* libxtst-dev
+* zlib1g-dev
+
+install:
+
+> mkdir build
+> cd build
+> cmake ..
+> make -j
+> mkdir install_dir
+> make install DESTDIR=/home/......../install_dir
+

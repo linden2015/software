@@ -1,0 +1,6239 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\setcitestyle{round}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman palatino
+\font_sans lmss
+\font_typewriter lmtt
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf true
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\notefontcolor #0000ff
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Essentials of LyX
+\end_layout
+
+\begin_layout Author
+Stephen Wolff and Liviu Andronic
+\end_layout
+
+\begin_layout Standard
+This document is intended to provide an overview of the essential features
+ and functions of LyX, to give you a basic working knowledge of the software,
+ and to enable you to begin typesetting beautiful documents with the powerful
+ LaTeX system.
+ It also discusses some of the more advanced topics and potential issues
+ that you will invariably encounter when creating LyX documents.
+ 
+\end_layout
+
+\begin_layout Standard
+Any errors that appear are entirely our own.
+ Please contact 
+\begin_inset CommandInset href
+LatexCommand href
+name "shwolffsan@gmail.com"
+target "shwolffsan@gmail.com"
+type "mailto:"
+
+\end_inset
+
+ or 
+\begin_inset CommandInset href
+LatexCommand href
+name "landronimirc@gmail.com"
+target "landronimirc@gmail.com"
+type "mailto:"
+
+\end_inset
+
+ with corrections, comments, and expansions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+What Is LyX?
+\end_layout
+
+\begin_layout Standard
+``LyX combines the power and flexibility of TeX/LaTeX with the ease of use
+ of a graphical interface.
+ This results in world-class support for creation of mathematical content
+ (via a fully integrated equation editor) and structured documents like
+ academic articles, theses, and books.''
+\end_layout
+
+\begin_layout Standard
+\align right
+--- From the LyX 
+\begin_inset CommandInset href
+LatexCommand href
+name "homepage"
+target "http://www.lyx.org/Home"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In brief, LyX is an easy-to-use typesetting environment that uses the power
+ of LaTeX to produce beautiful documents.
+ Like Microsoft Word, LyX provides an intuitive graphical-user interface
+ that automatically takes care of the LaTeX ``programming''.
+ However, LyX then uses the underlying LaTeX software to produce professional-qu
+ality output that Microsoft Word can only dream of.
+ LyX is also similar in scope to Scientific WorkPlace, but is accessible
+ at a price that no commercial rival can beat: it's 
+\emph on
+free
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+MS Word comes with the concept of WYSIWYG, literally meaning that what you
+ see on the screen is what you get printed on the paper.
+ LyX (and LaTeX) cannot do this by design, and can only give you a hint
+ of how the printed output 
+\emph on
+would 
+\emph default
+look like.
+ Hence the ``almost WYSIWYG
+\begin_inset Quotes erd
+\end_inset
+
+ concept.
+ The actual output depends on the chosen document class and various options,
+ and you need to generate the PDF to get a clear idea of the final output.
+ 
+\end_layout
+
+\begin_layout Subsection
+How to Obtain LyX
+\end_layout
+
+\begin_layout Standard
+LyX is available for Windows, Mac OS X, and Linux.
+ You can download the version corresponding to your operating system from
+ the LyX Download page:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.lyx.org/Download"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+If you are using a Mac, you will also have to install a LaTeX distribution
+ (the LyX Download page provides a link to 
+\begin_inset CommandInset href
+LatexCommand href
+name "MacTeX"
+target "http://www.tug.org/mactex/"
+
+\end_inset
+
+).
+ The LyX versions for Windows and Linux already come bundled with a LaTeX
+ distribution, so in most cases you do not need to worry for that.
+\end_layout
+
+\begin_layout Paragraph
+LyX 2.0
+\end_layout
+
+\begin_layout Standard
+The latest stable version is being released this week and is recommended
+ for most users.
+ It provides several new features (real-time spell checking, support for
+ R, XeTeX, etc.) that many of you may find useful.
+ Binaries for Windows and Mac OS X will shortly be available on this page:
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset CommandInset href
+LatexCommand href
+target "ftp://ftp.lyx.org/pub/lyx/bin/2.0.0/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Windows users, when installing LyX for the first time, prefer the ``Bundle
+\begin_inset Quotes erd
+\end_inset
+
+ installer, since it will also install a LaTeX distribution and some additional
+ software that is used by LyX.
+ Mac users, don't forget to also install a LaTeX distribution.
+ For Linux users, the source code is already available here: 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset CommandInset href
+LatexCommand href
+target "ftp://ftp.lyx.org/pub/lyx/stable/2.0.x/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+How to Create and Compile a Document
+\end_layout
+
+\begin_layout Standard
+To create a new LyX document, launch the LyX program, and from the menu
+ at the top of the screen click 
+\family typewriter
+\color blue
+File
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+New
+\family default
+\color inherit
+ (if you have a template you wish to use, select 
+\family typewriter
+\color blue
+File
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+New from Template...
+\family default
+\color inherit
+).
+ A LyX document window will appear; let the writing begin! Note, however,
+ that what you see in the LyX document window is not quite what the final
+ output will look like (cf ``almost WYSIWYG
+\begin_inset Quotes erd
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+To see your document in all of its finalized LaTeX glory, you will have
+ to compile your document.
+ This, in LyX, consists of clicking a single icon: the 
+\family typewriter
+\color blue
+View PDF (pdflatex)
+\family default
+\color inherit
+ icon at the top left of the LyX document window
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+You can switch the viewing format to either 
+\family typewriter
+\color blue
+DVI
+\family default
+\color inherit
+ or 
+\family typewriter
+\color blue
+PostScript
+\family default
+\color inherit
+, but do so only if you are familiar with differences between these formats.
+ For most uses 
+\family typewriter
+\color blue
+PDF
+\family default
+\color inherit
+ is the optimal choice.
+\end_layout
+
+\end_inset
+
+.
+ When you want to view what the final output will look like, save your document
+ (
+\family typewriter
+\color blue
+File
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Save
+\family default
+\color inherit
+, or the appropriate hot keys), click on the 
+\family typewriter
+\color blue
+View
+\family default
+\color inherit
+ icon, and LyX will compile your document and display the final PDF output
+ in a separate window.
+ 
+\end_layout
+
+\begin_layout Standard
+The 
+\family typewriter
+\color blue
+View
+\family default
+\color inherit
+ icon is practical for 
+\emph on
+previewing
+\emph default
+ your final output, but it is generally a good habit to use 
+\family typewriter
+\color blue
+File
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Export 
+\family default
+\color inherit
+
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+
+\family typewriter
+\color blue
+ PDF (pdflatex)
+\family default
+\color inherit
+ to actually export your final PDF document.
+ 
+\end_layout
+
+\begin_layout Subsection
+The Value of Backups
+\end_layout
+
+\begin_layout Standard
+As a general rule, LyX is rock-solid and works like a Swiss watch.
+ However, the very nature of LaTeX files means that sometimes something
+ can get messed up and render your document un-compilable (this can happen
+ with MS Word too, when your document gets corrupted).
+ 
+\end_layout
+
+\begin_layout Standard
+To avoid any such surprises, especially just before the deadline, it is
+ strongly recommended to use a general purpose file backup programme such
+ as 
+\begin_inset CommandInset href
+LatexCommand href
+name "Dropbox"
+target "https://www.dropbox.com/"
+
+\end_inset
+
+ or 
+\begin_inset CommandInset href
+LatexCommand href
+name "SpiderOak"
+target "https://spideroak.com/"
+
+\end_inset
+
+.
+ Both are free to use, cross-platform and 
+\emph on
+very
+\emph default
+ easy to set up.
+ They are also extremely easy to use in your day-to-day computer work.
+\end_layout
+
+\begin_layout Standard
+The effort is minimal, and the benefits could be highly rewarding (as in:
+ `you managed to submit the thesis in time').
+ Thus, when something strange happens and you can no longer compile your
+ document and cannot find the root cause, you can simply (and easily) revert
+ to an older version of your document using one of these tools.
+\end_layout
+
+\begin_layout Section
+Document Settings
+\end_layout
+
+\begin_layout Standard
+LyX automatically takes care of most of the formatting aspects of a document
+ (layout, spacing, etc.), allowing the user to focus on the content of the
+ document.
+ However, there may be times you want to change the general appearance of
+ your document, and for these times it is useful to be acquainted with the
+ 
+\family typewriter
+\color blue
+Document
+\family default
+\color inherit
+ toolbar.
+ 
+\end_layout
+
+\begin_layout Standard
+When starting a new document, first you will want to decide on the type
+ of the document and the appropriate LaTeX class, and on several general
+ aspects of the document layout.
+ 
+\end_layout
+
+\begin_layout Subsection
+Document Classes
+\end_layout
+
+\begin_layout Standard
+LyX comes with numerous pre-defined document classes, or ``types'' of documents.
+ The most commonly used document classes include
+\end_layout
+
+\begin_layout Itemize
+article
+\end_layout
+
+\begin_layout Itemize
+report
+\end_layout
+
+\begin_layout Itemize
+book
+\end_layout
+
+\begin_layout Itemize
+letter
+\end_layout
+
+\begin_layout Itemize
+presentation (slides)
+\end_layout
+
+\begin_layout Standard
+Document classes differ in their available headings (for example, you can
+ use ``chapter'' in the book class, but not in the article class) and their
+ layout.
+ For most shorter papers, the ``article'' class will serve us perfectly.
+ To see the full list of document classes, or to change the type of your
+ document, click on the 
+\family typewriter
+\color blue
+Document
+\family default
+\color inherit
+ tab in the toolbar (at the top of the window or screen) and click on 
+\family typewriter
+\color blue
+Settings...
+
+\family default
+\color inherit
+ in the dropdown menu.
+\end_layout
+
+\begin_layout Subsection
+Text Layout, Page Layout, and Page Margins
+\end_layout
+
+\begin_layout Standard
+Within the 
+\family typewriter
+\color blue
+Document Settings
+\family default
+\color inherit
+ window, you can alter several settings.
+\end_layout
+
+\begin_layout Itemize
+The 
+\family typewriter
+\color blue
+Text Layout
+\family default
+\color inherit
+ tab allows you to change the separation between paragraphs and the spacing
+ between lines (single spaced, double spaced, etc.).
+\end_layout
+
+\begin_layout Itemize
+The 
+\family typewriter
+\color blue
+Page Layout
+\family default
+\color inherit
+ tab allows you to change the paper format (A4, US letter, etc.), orientation
+ (portrait versus landscape), and headers.
+\end_layout
+
+\begin_layout Itemize
+The 
+\family typewriter
+\color blue
+Page Margins
+\family default
+\color inherit
+ tab allows you to change certain spacing parameters.
+\end_layout
+
+\begin_layout Subsection
+Fonts
+\end_layout
+
+\begin_layout Standard
+The 
+\family typewriter
+\color blue
+Document Settings
+\family default
+\color inherit
+ window also contains a 
+\family typewriter
+\color blue
+Fonts
+\family default
+\color inherit
+ tab that allows you to change the default fonts and font size used in your
+ document.
+\end_layout
+
+\begin_layout Standard
+To obtain professional looking and stylish results, one should use as few
+ fonts as possible in any given document.
+ For consistency, LyX (and LaTeX) allow the use of only three types of fonts:
+ Serif (also called Roman, used for most of the text in a document), 
+\family sans
+Sans Serif (used sometimes for headings)
+\family default
+ and 
+\family typewriter
+Typewriter (used mostly for code)
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Please note that the default font in LyX is hardly suitable for printed
+ output (long story!), and you will always want to use some other font.
+ 
+\noun on
+``
+\noun default
+Latin Modern
+\begin_inset Quotes erd
+\end_inset
+
+ seems a reasonable choice to begin with, but you are free to experiment
+ with the various fonts available (for example, ``Palatino
+\begin_inset Quotes erd
+\end_inset
+
+ as used in this document).
+ 
+\end_layout
+
+\begin_layout Standard
+You can also use ``Old Style Figures
+\begin_inset Quotes erd
+\end_inset
+
+ (0123456789), as you can notice in this document, by clicking the relevant
+ checkbox.
+\end_layout
+
+\begin_layout Subsection
+Language
+\end_layout
+
+\begin_layout Standard
+One of the first things that you want to set in a new document is the 
+\family typewriter
+\color blue
+Language
+\family default
+\color inherit
+ in 
+\family typewriter
+\color blue
+Document Settings
+\family default
+\color inherit
+.
+ However, this defaults to English so it should suit most of us for the
+ mémoire.
+ 
+\end_layout
+
+\begin_layout Section
+Section, Subsections, etc.
+\end_layout
+
+\begin_layout Standard
+LyX greatly simplifies the writing of ``structured'' documents, that is,
+ documents with chapters, sections, subsections, etc.
+\end_layout
+
+\begin_layout Standard
+To add a new section, subsection, etc.
+ to your document, simply go to the menu bar at the top right of your document
+ window, which probably contains the word ``Standard'' (referring to the
+ current environment).
+ Click on this menu bar, and then select the section level you want (section,
+ subsection, etc.) from the ``Section'' part of the dropdown menu.
+ Notice that LyX automatically takes care of the numbering for you! Furthermore,
+ if you decide you want to move a certain section, subsection, etc.
+ to a different part of your document, just cut and paste; again LyX will
+ automatically adjust of the numbering! (N.B.
+ This automatic renumbering applies equally well to other numbered objects:
+ list items, equations, etc.)
+\end_layout
+
+\begin_layout Standard
+If you don't want a section numbered, choose the appropriate section level
+ under the ``Unnumbered'' part of the dropdown menu (section*, subsection*,
+ etc.).
+\end_layout
+
+\begin_layout Standard
+If you decide you want to change a section level (e.g.
+ upgrade a subsection into a full-blown section), simply select the relevant
+ section text in your document (or just click somewhere in the relevant
+ section text) and select the new desired section level from the dropdown
+ menu at the top of the LyX document window.
+ You can also use the ``Tab'' key to perform such changes.
+\end_layout
+
+\begin_layout Standard
+To easily make two Sections switch places, you can use 
+\family typewriter
+\color blue
+Document
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Out\SpecialChar \-
+line
+\family default
+\color inherit
+, and then 
+\family typewriter
+\color blue
+Right-click to access context-menu
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Move section up / down
+\family default
+\color inherit
+.
+ It is generally a good idea to use Outline to browse your LyX document.
+ 
+\end_layout
+
+\begin_layout Section
+Table of Contents
+\end_layout
+
+\begin_layout Standard
+To add a table of contents to your document, go to the toolbar at the top
+ of the screen and click on
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\family typewriter
+\color blue
+Insert
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+List/TOC
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Table of Contents
+\family default
+\color inherit
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+The words ``Table of Contents'' will appear where you left your cursor.
+ Note that the full table of contents only appers in the compiled version
+ your document.
+ If the links in your ToC are not activated (if you cannot click on them),
+ then you may want to enable 
+\family typewriter
+\color blue
+Document Settings
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+PDF Properties
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+hyperref
+\family default
+\color inherit
+.
+ 
+\end_layout
+
+\begin_layout Section
+Typesetting Basics
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+The standard typesetting commands---
+\series bold
+bold
+\series default
+, 
+\emph on
+italic
+\emph default
+ (also called ``emphasis
+\begin_inset Quotes erd
+\end_inset
+
+ in LyX), 
+\noun on
+Small Caps
+\noun default
+ (also called ``noun
+\begin_inset Quotes erd
+\end_inset
+
+), 
+\color green
+font color
+\color inherit
+---can be found under the 
+\family typewriter
+\color blue
+Text style
+\family default
+\color inherit
+ tab (the icon with the image ``a
+\shape italic
+b
+\shape default
+'') at the top of the LyX document window.
+ (If you have sized your document window very small, you may have to click
+ on the two ``right arrows'' at the far right of the window to reveal more
+ options and see this icon.) The bold option can be found under the 
+\family typewriter
+\color blue
+Series
+\family default
+\color inherit
+ menu, italics and small caps under 
+\family typewriter
+\color blue
+Shape
+\family default
+\color inherit
+, and standard font colors under (surprise) 
+\family typewriter
+\color blue
+Color
+\family default
+\color inherit
+.
+ To apply these typesetting options to a particular part of your document,
+ simply highlight the text you want to adjust, then select the desired action
+ from the 
+\family typewriter
+\color blue
+Text style
+\family default
+\color inherit
+ menu, and click the ``Apply'' button.
+ You can also bring up the Text style menu by highlighting the relevant
+ text and right-clicking (or control-clicking); a dropdown menu will appear,
+ from which you can select 
+\family typewriter
+\color blue
+Text style
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Customize...
+\family default
+\color inherit
+, and then select the desired style.
+\end_layout
+
+\begin_layout Standard
+Another neat feature of LyX is the 
+\family typewriter
+\color blue
+Apply last
+\family default
+\color inherit
+ icon (containing the word ``Font'' above a downward-pointing arrow, right
+ next to the 
+\family typewriter
+\color blue
+Toggle emphasis
+\family default
+\color inherit
+ and 
+\family typewriter
+\color blue
+Toggle noun
+\family default
+\color inherit
+ buttons) at the top of the LyX document window.
+ If you highlight some text and click this icon, the text will be formatted
+ with the style that you used last.
+\end_layout
+
+\begin_layout Subsection
+Justification of Text
+\end_layout
+
+\begin_layout Standard
+To change the justification (center, right-justify, etc.) or spacing between
+ lines (single, double, etc.), select the relevant text in your document,
+ then click on the 
+\family typewriter
+\color blue
+Paragraph settings
+\family default
+\color inherit
+ icon at the top of the LyX document window.
+ This is also the icon to click when you wish to specify whether a paragraph
+ should start with or without an indent (important when you have text following
+ a math environment; see section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Math-Basics"
+
+\end_inset
+
+ below); this is done by checking or unchecking the 
+\family typewriter
+\color blue
+Indent Paragraph
+\family default
+\color inherit
+ box in the 
+\family typewriter
+\color blue
+Paragraph settings
+\family default
+\color inherit
+ window.
+\end_layout
+
+\begin_layout Subsection
+Horizontal and Vertical Spacing
+\end_layout
+
+\begin_layout Standard
+To manually add horizontal or vertical space at a particular point in your
+ document, click on 
+\family typewriter
+\color blue
+Insert
+\family default
+\color inherit
+ from the toolbar at the top of the screen, then 
+\family typewriter
+\color blue
+Formatting
+\family default
+\color inherit
+, then the appropriate command.
+\end_layout
+
+\begin_layout Standard
+LyX (and LaTeX) gently prohibit the use of multiple spaces or new lines,
+ which is almost always a bad idea.
+ If you really need to have multiple spaces, you can use 
+\family typewriter
+\color blue
+Insert 
+\family default
+\color inherit
+
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Formatting
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Protected Space
+\family default
+\color inherit
+.
+ If you really need to have multiple empty lines, you can use 
+\family typewriter
+\color blue
+Insert 
+\family default
+\color inherit
+
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Formatting
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Vertical Space
+\family default
+\color inherit
+.
+\end_layout
+
+\begin_layout Subsection
+Page Breaks
+\end_layout
+
+\begin_layout Standard
+Also within the 
+\family typewriter
+\color blue
+Insert
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Formatting
+\family default
+\color inherit
+ menu, you can find the 
+\family typewriter
+\color blue
+New Page
+\family default
+\color inherit
+ and 
+\family typewriter
+\color blue
+Page Break
+\family default
+\color inherit
+ commands.
+\end_layout
+
+\begin_layout Subsection
+Footnotes, Marginal Notes, and Comments
+\end_layout
+
+\begin_layout Standard
+To add a footnote, put your cursor where you want the superscript number
+ linking to the footnote to appear, then either click the 
+\family typewriter
+\color blue
+Insert footnote
+\family default
+\color inherit
+ icon at the top of the LyX document window, or click 
+\family typewriter
+\color blue
+Insert
+\family default
+\color inherit
+ and select 
+\family typewriter
+\color blue
+Footnote
+\family default
+\color inherit
+ from the dropdown menu.
+ You can add a marginal note the same way, via either the 
+\family typewriter
+\color blue
+Insert margin note 
+\family default
+\color inherit
+icon or the 
+\family typewriter
+\color blue
+Insert
+\family default
+\color inherit
+ tab.
+ 
+\end_layout
+
+\begin_layout Standard
+Lastly, if you want to make a note to yourself that doesn't appear in the
+ actual document (what is commonly called a ``comment'' in computer programming
+ lingo), put your cursor where you want the note to appear and click the
+ 
+\family typewriter
+\color blue
+Insert note
+\family default
+\color inherit
+ icon at the top of the LyX document window.
+\end_layout
+
+\begin_layout Standard
+Here is an example of a sentence that uses a footnote,
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+N.B.
+ It is customary to start the footnote 
+\shape italic
+after
+\shape default
+ any punctuation following the word after which you wish the footnote to
+ begin.
+\end_layout
+
+\end_inset
+
+ margin note,
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Marginal notes appear in the outer margin of the final document; by default,
+ the first line of the margin note is level with the line in which the text-body
+ word preceding the margin note appears.
+\end_layout
+
+\end_inset
+
+ and comment (what LyX calls Note).
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Personally, I prefer the term ``Comment'' to ``Note''.
+ Which is why you see the annoying ``comment/note'' complex in the following
+ sentence.
+\end_layout
+
+\end_inset
+
+ Within the LyX document window, you can expand or collapse the text of
+ a footnote, margin note, and comment/note by clicking the word ``foot#'',
+ ``margin'', or ``Note'' appearing at the beginning of the note.
+\end_layout
+
+\begin_layout Subsection
+Quotation Marks
+\end_layout
+
+\begin_layout Standard
+Note that LyX distinguishes between the left-quotation mark key ` and the
+ right-quotation mark key ' found on the keyboard.
+ If you use the double-quotation mark key 
+\begin_inset Quotes eld
+\end_inset
+
+ to type the quotation marks on both sides of a word or phrase, LyX will
+ automatically correct the orientation of the first set of quotation marks.
+ For example, 
+\begin_inset Quotes eld
+\end_inset
+
+This phrase is surrounded by double-quotation marks
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+However, LyX does not autocorrect single-quotation marks.
+ For example, 'This phrase is surrounded by two right single-quotation marks'.
+ Note that the left-quotation mark, appearing at the start of this phrase,
+ is oriented incorrectly.
+ Use instead the left single-quotation mark at the beginning; `The preceding
+ is a left single-quotation mark; what follows is a right single-quotation
+ mark'.
+\end_layout
+
+\begin_layout Subsection
+Hyphenation
+\end_layout
+
+\begin_layout Standard
+LaTeX is usually good at hyphenating your text and does so automatically.
+ But sometimes it can fail spectacularly and generate curious results.
+ 
+\end_layout
+
+\begin_layout Standard
+Here's an example: bababadalgharaghtakamminarronnkonnbronntonnerronntuonnthunntr
+ovarrhounawnskawntoohoohoordenenthurnuk.
+ 
+\end_layout
+
+\begin_layout Standard
+This is a genuine English word (
+\begin_inset CommandInset href
+LatexCommand href
+name "representing the thunderclap associated with the fall of Adam and Eve"
+target "http://en.wiktionary.org/wiki/bababadalgharaghtakamminarronnkonnbronntonnerronntuonnthunntrovarrhounawnskawntoohoohoordenenthurnuk"
+
+\end_inset
+
+), albeit one that you will probably not use in your master's thesis.
+ But you get the idea.
+ 
+\end_layout
+
+\begin_layout Standard
+One way to work around this issue is to 
+\family typewriter
+\color blue
+Insert
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Formatting
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+
+\family typewriter
+\color blue
+ Hyphe\SpecialChar \-
+nation Point
+\family default
+\color inherit
+ at the exact spot in a problematic word where you think that the hyphenation
+ should occur.
+ 
+\end_layout
+
+\begin_layout Standard
+Here's an example: bababadalgharaghtakamminarronnkonnbronntonner\SpecialChar \-
+ronntuonnthunntr
+ovarrhounawnskawntoohoohoordenenthurnuk.
+\end_layout
+
+\begin_layout Standard
+The nice thing about hyphenation points is that they are activated only
+ when actually hyphenating a word.
+ Otherwise, you can insert as\SpecialChar \-
+many\SpecialChar \-
+as\SpecialChar \-
+you\SpecialChar \-
+want, and they won't get printed in
+ the final PDF (unless the one between ``you
+\begin_inset Quotes erd
+\end_inset
+
+ and ``want
+\begin_inset Quotes erd
+\end_inset
+
+, which actually does some job there).
+ 
+\end_layout
+
+\begin_layout Subsection
+Spellchecker
+\end_layout
+
+\begin_layout Standard
+To enable real-time Spellchecking, as you're probably used to in MS Word,
+ you need to 
+\family typewriter
+\color blue
+Tools
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Preferences
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+
+\family typewriter
+\color blue
+ Language 
+\family default
+\color inherit
+
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+
+\family typewriter
+\color blue
+ Spell\SpecialChar \-
+checker 
+\family default
+\color inherit
+
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+
+\family typewriter
+\color blue
+ Spell\SpecialChar \-
+check continuously
+\family default
+\color inherit
+ (only available in LyX 2.0).
+ In this dialogue, you may also need to change the 
+\family typewriter
+\color blue
+Engine
+\family default
+\color inherit
+ to 
+\family typewriter
+\color blue
+Aspell
+\family default
+\color inherit
+.
+\end_layout
+
+\begin_layout Standard
+If the Spellchecker doesn't work, you may need to install 
+\begin_inset CommandInset href
+LatexCommand href
+name "Aspell"
+target "http://wiki.lyx.org/Devel/Aspell"
+
+\end_inset
+
+ and the necessary dictionaries for 
+\begin_inset CommandInset href
+LatexCommand href
+name "Windows"
+target "http://wiki.lyx.org/Windows/Aspell6"
+
+\end_inset
+
+ or for 
+\begin_inset CommandInset href
+LatexCommand href
+name "Mac"
+target "http://wiki.lyx.org/Mac/MacSpelling"
+
+\end_inset
+
+.
+ Linux users should be able to install Aspell using the package manager
+ of your Linux distribution.
+ 
+\end_layout
+
+\begin_layout Section
+Lists
+\end_layout
+
+\begin_layout Standard
+LyX provides four pre-programmed list environments.
+\end_layout
+
+\begin_layout Subsection
+Itemize
+\end_layout
+
+\begin_layout Standard
+The 
+\family typewriter
+\color blue
+Itemized list
+\family default
+\color inherit
+ icon creates a ``bullet-point'' type list.
+ Example:
+\end_layout
+
+\begin_layout Itemize
+Item 1.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Subitem a.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Subsubitem i.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Item 2.
+\end_layout
+
+\begin_layout Subsection
+Numbered List (Enumerate)
+\end_layout
+
+\begin_layout Standard
+The 
+\family typewriter
+\color blue
+Numbered list
+\family default
+\color inherit
+ icon creates (surprise!) a numbered list.
+ Example:
+\end_layout
+
+\begin_layout Enumerate
+Item 1.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Subitem a.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Subsubitem i.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Item 2.
+\end_layout
+
+\begin_layout Subsection
+List
+\end_layout
+
+\begin_layout Standard
+The 
+\family typewriter
+\color blue
+List
+\family default
+\color inherit
+ icon creates a list environment in which you customize the delimiter
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Delimter is perhaps not the correct term here.
+\end_layout
+
+\end_inset
+
+ for each item.
+ Example:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+First
+\begin_inset space ~
+\end_inset
+
+Point.
+ Item 1.
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+First
+\begin_inset space ~
+\end_inset
+
+Sub-Point.
+ Subitem a.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Second
+\begin_inset space ~
+\end_inset
+
+Point.
+ Item 2.
+\end_layout
+
+\begin_layout Subsection
+Description
+\end_layout
+
+\begin_layout Standard
+The 
+\family typewriter
+\color blue
+Description
+\family default
+\color inherit
+ icon creates a list environment that is identical to that of 
+\family typewriter
+\color blue
+List
+\family default
+\color inherit
+, but the customized delimiters for each item are in bold.
+ Example:
+\end_layout
+
+\begin_layout Description
+First
+\begin_inset space ~
+\end_inset
+
+Point.
+ Item 1.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+First
+\begin_inset space ~
+\end_inset
+
+Sub-Point.
+ Subitem a.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Second
+\begin_inset space ~
+\end_inset
+
+Point.
+ Item 2.
+\end_layout
+
+\begin_layout Standard
+Note that for the list and description environments, LyX interprets the
+ first word you type as the custom delimiter, and everything after the first
+ space as the item.
+ If you want to use multiple words in the delimiter for an item, you will
+ have to separate these words with ``protected spaces'', which you can insert
+ anywhere in the document by clicking 
+\family typewriter
+\color blue
+Insert
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Formatting
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Protected Space
+\family default
+\color inherit
+.
+ Compare the following two items in the ``description'' environment; the
+ first uses a protected space, the second does not.
+\end_layout
+
+\begin_layout Description
+First
+\begin_inset space ~
+\end_inset
+
+Point.
+ The space between the words ``First'' and ``Point'' is a ``protected space''.
+\end_layout
+
+\begin_layout Description
+Second Point.
+ The space between the words ``Second'' and ``Point'' is just a normal space.
+\end_layout
+
+\begin_layout Standard
+If you want to insert additional horizontal space that is not an explicit
+ ``single space'' between words, it is recommended that you use the 
+\family typewriter
+\color blue
+Insert
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Formatting
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Horizontal Space...
+
+\family default
+\color inherit
+ command.
+\end_layout
+
+\begin_layout Section
+Math Basics
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Math-Basics"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+LaTeX was designed to typeset mathematical expressions, and to typeset them
+ beautifully.
+ A mathematical expressions can appear either (1) within the text of a line
+ or paragraph, which is referred to as ``inline''; or (2) on its own line,
+ separate from the text.
+ To insert a mathematical expression in your document, move the cursor to
+ the point in the document at which you want the expression to appear, then
+ go to the menu at the top of the screen and click
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\family typewriter
+\color blue
+Insert
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Math
+\family default
+\color inherit
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+The dropdown list that appears contains several options.
+\end_layout
+
+\begin_layout Standard
+The first group of options are the various math environments.
+\end_layout
+
+\begin_layout Itemize
+The 
+\family typewriter
+\color blue
+Inline Formula
+\family default
+\color inherit
+ environment is used for mathematics appearing in the text body (paragraphs,
+ section headings, etc.) of your document.
+ For example, we can write 
+\begin_inset Formula $x=\sqrt[3]{\exp(y)}\Longrightarrow y=\ln x^{3}$
+\end_inset
+
+ in the middle of this sentence using the 
+\family typewriter
+\color blue
+Inline Formula
+\family default
+\color inherit
+ environment.
+\end_layout
+
+\begin_layout Itemize
+The 
+\family typewriter
+\color blue
+Display Formula
+\family default
+\color inherit
+ environment is used to write a single-line mathematical expression on a
+ separate line from the body text.
+ For example,
+\begin_inset Formula 
+\[
+\sum_{j=1}^{n}j^{2}=1^{2}+2^{2}+\ldots+n^{2}=\frac{n(n+1)(2n+1)}{6}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The 
+\family typewriter
+\color blue
+Numbered Formula
+\family default
+\color inherit
+ environment puts a single line of mathematics on a separate line, along
+ with an equation number.
+ LaTeX makes referring to these equation numbers later in the document very
+ easy; see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Labels-and-References"
+
+\end_inset
+
+.
+ The Numbered Formula environment looks like
+\begin_inset Formula 
+\begin{equation}
+e^{x}=\lim_{n\rightarrow+\infty}\left(1+\frac{x}{n}\right)^{n}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+To display mathematical formulae spanning multiple lines, use 
+\family typewriter
+\color blue
+AMS align Environment
+\family default
+\color inherit
+.
+ For example,
+\begin_inset Formula 
+\begin{align*}
+\mu_{Y|X}= & \mathbb{E}\left[Y|X\right]\\
+= & \mathbb{E}\left[\theta X^{2}|X\right]\\
+= & X^{2}\mathbb{E}\left[\theta|X\right].
+\end{align*}
+
+\end_inset
+
+After creating an AMS align environment, you will notice that only a single
+ line of math environment appears.
+ To add additional lines, click the 
+\family typewriter
+\color blue
+Add row
+\family default
+\color inherit
+ icon in the math palette.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ By default, the AMS align environment in LyX does not number equations
+ (as in the 
+\family typewriter
+\color blue
+Numbered Formula
+\family default
+\color inherit
+ environment).
+ To add an equation number to a line, move your text cursor to the line
+ in the AMS align environment that you want to number, then click.
+ For example
+\begin_inset Formula 
+\begin{align*}
+\mu_{Y|X}= & \mathbb{E}\left[Y|X\right]\\
+= & \mathbb{E}\left[\theta X^{2}|X\right]\\
+= & X^{2}\mathbb{E}\left[\theta|X\right].
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Note: 
+\family typewriter
+\color blue
+Eqnarray Environment
+\family default
+\color inherit
+, also found in the 
+\family typewriter
+\color blue
+Insert
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Math
+\family default
+\color inherit
+ dropdown menu, does the same thing, but LaTeX purists assure me that Eqnarray
+ suffers from irregular spacing issues, and therefore 
+\family typewriter
+\color blue
+AMS align Environment
+\family default
+\color inherit
+ is preferable.
+\end_layout
+
+\begin_layout Standard
+The second group of options in the 
+\family typewriter
+\color blue
+Insert
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Math
+\family default
+\color inherit
+ dropdown menu allow you to create various mathematical objects (array,
+ matrix, piecewise function definitions, etc.) within a math environment.
+ However, these objects are perhaps easier to create using the math palette
+ that automatically appears when you work within a math environment, so
+ we discuss this math palette in the remainder of the section.
+\end_layout
+
+\begin_layout Standard
+After you select a math environment from the 
+\family typewriter
+\color blue
+Insert
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Math
+\family default
+\color inherit
+ dropdown menu, LyX automatically places your text cursor within the environment
+, and a math palette pops up at the bottom of the LyX document window.
+ This math palette appears whenever you move your text cursor into a math
+ environment.
+ We briefly illustrate some of the many features of this math palette, whose
+ extensiveness and flexibility you will appreciate more and more as you
+ continue to use LyX.
+\end_layout
+
+\begin_layout Description
+Math
+\begin_inset space ~
+\end_inset
+
+spacings.
+ The 
+\family typewriter
+\color blue
+Math spacings
+\family default
+\color inherit
+ icon allows you to insert (and remove) horizontal space within a math environme
+nt.
+ For example, you may want to add space on either side of the implications
+ arrow in a statement such as
+\begin_inset Formula 
+\[
+X\Rightarrow Y.
+\]
+
+\end_inset
+
+To add this horizontal space, simply put your text cursor where you want
+ the extra space to appear and click the 
+\family typewriter
+\color blue
+Math spacings
+\family default
+\color inherit
+ icon, then select the size of the spacing you want.
+ Adding a quadratin space, for example, to either side of the implication
+ arrow produces 
+\begin_inset Formula 
+\[
+X\quad\Rightarrow\quad Y.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Fonts.
+ As its name suggests, the 
+\family typewriter
+\color blue
+Fonts
+\family default
+\color inherit
+ icon provides a dropdown list of various fonts you can apply to compatible
+ symbols appearing in a math environment.
+ A few commonly used fonts, illustrated in the following expression, are
+ Boldsymbol (used for 
+\begin_inset Formula $\boldsymbol{X}$
+\end_inset
+
+ and 
+\begin_inset Formula $\boldsymbol{\theta}$
+\end_inset
+
+ below), Blackboard (used for the 
+\begin_inset Formula $\mathbb{E}$
+\end_inset
+
+), Calligraphic (used for the 
+\begin_inset Formula $\mathcal{N}$
+\end_inset
+
+), and Normal text mode (used to so that the variance operator displays
+ as 
+\begin_inset Formula $\textrm{Var}$
+\end_inset
+
+, rather than the default appearance 
+\begin_inset Formula $Var$
+\end_inset
+
+): 
+\begin_inset Formula 
+\[
+\boldsymbol{X}\sim\mathcal{N}\left(\mathbb{E}\left[\boldsymbol{\theta}\right],\textrm{Var}\left(\boldsymbol{\theta}\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Functions.
+ Clicking the 
+\family typewriter
+\color blue
+Functions
+\family default
+\color inherit
+ icon brings up a dropdown list with several commonly used functions: 
+\begin_inset Formula $\exp$
+\end_inset
+
+, 
+\begin_inset Formula $\lim$
+\end_inset
+
+, 
+\begin_inset Formula $\max$
+\end_inset
+
+, etc.
+ N.B.
+ To add a subscript and/or superscript to compatible functions, first use
+ the 
+\family typewriter
+\color blue
+Functions
+\family default
+\color inherit
+ icon to write the function, then click the 
+\family typewriter
+\color blue
+Subscript
+\family default
+\color inherit
+ icon and type the subscript.
+ For example, 
+\begin_inset Formula $\lim_{x\rightarrow+\infty}\sin^{2}(x)$
+\end_inset
+
+.
+ Another potentially useful fact to note is that certain mathematical expression
+s display slightly differently when used in inline versus separate-line
+ math environments.
+ Writing the same limit expression in the Display Formula environment, for
+ example, results in
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow+\infty}\sin^{2}(x).
+\]
+
+\end_inset
+
+Note that the subscript appears directly underneath the limit function,
+ rather than to the right as it does in the inline math environment.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+You can force LaTeX to display a symbol in an inline environment the same
+ way it would display that symbol in a separate-line math environment by
+ using Display style (I thought...)?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Frame
+\begin_inset space ~
+\end_inset
+
+decorations.
+ The 
+\family typewriter
+\color blue
+Frame decorations
+\family default
+\color inherit
+ icon allows you to add embellishments such as hats, tildes, arrows, etc.
+ to compatible characters.
+ For example: 
+\begin_inset Formula $\theta\sim\left[\underline{\theta},\overline{\theta}\right]$
+\end_inset
+
+ such that 
+\begin_inset Formula $E\left[\theta\right]=\hat{\theta}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+Big
+\begin_inset space ~
+\end_inset
+
+operators.
+ The 
+\family typewriter
+\color blue
+Big operators
+\family default
+\color inherit
+ icon contains such symbols as 
+\begin_inset Formula $\int,\iiint,\sum,\prod,\bigcup,\bigcap,$
+\end_inset
+
+ etc.
+\end_layout
+
+\begin_layout Description
+Miscellaneous.
+ The 
+\family typewriter
+\color blue
+Miscellaneous
+\family default
+\color inherit
+ icon contains the very useful symbols 
+\begin_inset Formula $\nabla,\partial,\infty,\emptyset,\exists,\forall$
+\end_inset
+
+, among others.
+\end_layout
+
+\begin_layout Description
+Dots.
+ The 
+\family typewriter
+\color blue
+Dots
+\family default
+\color inherit
+ icon allows you to use ellipses-type dots in math environments.
+ The dots in the following matrix were all obtained via the 
+\family typewriter
+\color blue
+Dots
+\family default
+\color inherit
+ icon:
+\begin_inset Formula 
+\[
+\left[\begin{array}{cccc}
+a_{11} & a_{12} & \ldots & a_{1n}\\
+a_{21} & a_{22} & \ldots & a_{2n}\\
+\vdots & \vdots & \ddots & \vdots\\
+a_{m1} & a_{m2} & \ldots & a_{mn}
+\end{array}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Parentheses.
+ The various parentheses icons allows you to add paired parentheses (round
+ parentheses, square brackets, curly braces) to math environmonts.
+ Note that the parentheses provided by these icons automatically adjust
+ to the size of the expression contained within the parentheses; in contrast,
+ parentheses you type using the keyboard will not self-adjust! While a fast
+ reader may not notice the difference between the keyboard parentheses in
+ 
+\begin_inset Formula $f(\frac{1}{2})$
+\end_inset
+
+ and the parentheses from the 
+\family typewriter
+\color blue
+Insert ()
+\family default
+\color inherit
+ icon in 
+\begin_inset Formula $f\left(\frac{1}{2}\right)$
+\end_inset
+
+ for inline math environments, she will certainly notice a difference in
+ separate-line math environments, 
+\begin_inset Formula 
+\[
+f(\frac{1}{2})\qquad\textrm{versus}\qquad f\left(\frac{1}{2}\right),
+\]
+
+\end_inset
+
+especially if you are displaying a large mathematical object like a matrix,
+\begin_inset Formula 
+\[
+(\begin{array}{cc}
+a & b\\
+c & d
+\end{array})\qquad\textrm{versus}\qquad\left(\begin{array}{cc}
+a & b\\
+c & d
+\end{array}\right).
+\]
+
+\end_inset
+
+The keyboard parentheses simply look risible.
+ Use the power of LaTeX that LyX makes available with one click of the various
+ parentheses icons! If you need to mix-and-match parentheses-types, as illustrat
+ed by the expression
+\begin_inset Formula 
+\[
+x\in\left[\frac{\alpha}{\underline{\theta}},+\infty\right),
+\]
+
+\end_inset
+
+use the 
+\family typewriter
+\color blue
+Insert delimiters
+\family default
+\color inherit
+ icon, uncheck the 
+\family typewriter
+\color blue
+Keep matched
+\family default
+\color inherit
+ checkbox, select the left- and right-parenthesis type you want to use,
+ and finally click ``Insert''.
+\end_layout
+
+\begin_layout Description
+Insert
+\begin_inset space ~
+\end_inset
+
+matrix.
+ The 
+\family typewriter
+\color blue
+Insert matrix
+\family default
+\color inherit
+ icon, as you can guess, allows you to easily construct matrices, such as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=\left(\begin{array}{cc}
+1 & 0\\
+0 & 1
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+The 
+\family typewriter
+\color blue
+Alignment
+\family default
+\color inherit
+ options at the bottom of the Insert matrix window allow you to specify
+ the vertical alignment for the matrix, as well as the horizontal alignment
+ in each column.
+ For the horizontal alignment, write one of the letters l, c, r (for left,
+ center, right) for each column in your matrix.
+ For example, for the two-column matrix above, we typed ``cc''.
+ Note that by default, matrices do not have surrounding parentheses.
+ To put parentheses around the matrix, highlight the matrix and click the
+ 
+\family typewriter
+\color blue
+Insert ()
+\family default
+\color inherit
+ or 
+\family typewriter
+\color blue
+Insert []
+\family default
+\color inherit
+ icon, according to the parenthesis type you desire.
+ (You can also first click the desired parenthesis, then the 
+\family typewriter
+\color blue
+Insert matrix
+\family default
+\color inherit
+ icon, to put the matrix inside the parentheses.) You can add or delete rows
+ or columns of a matrix by placing your text cursor in the row or column
+ you want to delete and clicking the 
+\family typewriter
+\color blue
+Delete row
+\family default
+\color inherit
+ or 
+\family typewriter
+\color blue
+Delete column
+\family default
+\color inherit
+ icon in the math palette.
+\end_layout
+
+\begin_layout Description
+Insert
+\begin_inset space ~
+\end_inset
+
+cases
+\begin_inset space ~
+\end_inset
+
+environment.
+ The 
+\family typewriter
+\color blue
+Insert cases environment
+\family default
+\color inherit
+ icon is used for statements such as the following:
+\begin_inset Formula 
+\[
+\mathbb{I}_{A}\left(x\right)=\begin{cases}
+1 & \textrm{if }x\in A,\\
+0 & \textrm{otherwise}.
+\end{cases}
+\]
+
+\end_inset
+
+When you create a cases environment, only one line to enter math and text
+ will appear:
+\begin_inset Formula 
+\[
+\mathbb{I}_{A}\left(x\right)=\begin{cases}
+1 & \textrm{if }x\in A.\end{cases}
+\]
+
+\end_inset
+
+To add additional lines (which is, after all, why you are using the cases
+ environment!), place your text cursor within the cases environment and
+ click the 
+\family typewriter
+\color blue
+Add row
+\family default
+\color inherit
+ icon in the math palette.
+ As with matrices, you can also delete unwanted rows by clicking the 
+\family typewriter
+\color blue
+Delete row
+\family default
+\color inherit
+ icon.
+\end_layout
+
+\begin_layout Section
+Labels and References
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Labels-and-References"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A powerful feature of LaTeX is its ability and flexibility in allowing internal
+ (and external!) referencing.
+ You can reference almost anything that is numbered: sections, subsections,
+ etc., as well as equations and figures.
+\end_layout
+
+\begin_layout Standard
+Referencing works in two steps: labeling and referencing.
+ We provide two illustrations.
+\end_layout
+
+\begin_layout Subsection
+Referencing Sections
+\end_layout
+
+\begin_layout Standard
+Let's suppose we want to add a reference here directing the reader to the
+ section ``Math Basics''.
+ To do so, first put your text cursor at the end of the section title, go
+ to the top of the LyX document window, and click the 
+\family typewriter
+\color blue
+Insert label
+\family default
+\color inherit
+ icon (the icon with the picture of a label).
+ A 
+\family typewriter
+\color blue
+Label
+\family default
+\color inherit
+ window will appear, with a suggested label name automatically filled in.
+ You can type another label name if you prefer.
+ After you click OK, a grey box with the label name will appear next to
+ the section you have labeled.
+\end_layout
+
+\begin_layout Standard
+To reference this label somewhere in your document, simply click the 
+\family typewriter
+\color blue
+Insert cross-reference
+\family default
+\color inherit
+ icon (the icon with the picture of the open book) at the top of the LyX
+ document window.
+ A 
+\family typewriter
+\color blue
+Cross-reference
+\family default
+\color inherit
+ window will appear, displaying the list of available labels you can reference,
+ along with some formatting options.
+ Click the label you want to reference, choose your desired reference format,
+ then click OK.
+ A grey box with the name of the label being referenced will then appear
+ in your LyX document; when you compile your document, LaTeX will convert
+ this reference into the appropriate number.
+\end_layout
+
+\begin_layout Standard
+For example, referencing the label we added to the section ``Math Basics''
+ produces the result: 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Math-Basics"
+
+\end_inset
+
+.
+ This is the section number corresponding to the section ``Math Basics''.
+ Clearly, the number by itself is a bit ambiguous (your reader will almost
+ surely think, ``What the heck is 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Math-Basics"
+
+\end_inset
+
+?'').
+ When calling references, try to write some appropriate context for the
+ reference.
+ For example, we might write ``Read about the essential math features in
+ section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Math-Basics"
+
+\end_inset
+
+.''
+\end_layout
+
+\begin_layout Subsection
+Referencing Equations
+\end_layout
+
+\begin_layout Standard
+Referencing numbered equations works exactly the same way.
+ Let's say we want to reference the following equation, which we have written
+ in a 
+\family typewriter
+\color blue
+Numbered Formula
+\family default
+\color inherit
+ environment so the equation is numbered:
+\begin_inset Formula 
+\begin{equation}
+e^{\pi i}-1=0.\label{eq:BeautifulRelation}
+\end{equation}
+
+\end_inset
+
+To reference this equation in your text, we follow the same label-reference
+ approach.
+ One important note: When you go to add a label to an equation, make sure
+ your text cursor is 
+\shape italic
+inside
+\shape default
+ the math environment.
+ If it is, the letters ``eq:'' will appear in the 
+\family typewriter
+\color blue
+Label
+\family default
+\color inherit
+ window when you click the 
+\family typewriter
+\color blue
+Insert label
+\family default
+\color inherit
+ icon, and you can fill in the name you want to give your equation.
+ After naming your equation and clicking OK, a small box with the name of
+ the equation will appear beside the equation number.
+ If your text cursor is not inside the math environment when you click the
+ 
+\family typewriter
+\color blue
+Insert label
+\family default
+\color inherit
+ icon, the tell-tale sign is that the letters ``eq:'' will 
+\shape italic
+not
+\shape default
+ appear in the 
+\family typewriter
+\color blue
+Label
+\family default
+\color inherit
+ window.
+ In this case, LyX will associate your label with the beginning of the paragraph
+ in which the equation is found, so be careful --- look for those green-light
+ letters ``eq:''!
+\end_layout
+
+\begin_layout Standard
+To reference the equation in your document, click the Insert cross-reference
+ icon, find the equation in the list of labels, choose your desired reference
+ format, then click OK.
+ For example: Equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:BeautifulRelation"
+
+\end_inset
+
+ is one of the most beautiful relations in mathematics.
+ Don't forget to write relevant context about the reference as appropriate!
+\end_layout
+
+\begin_layout Standard
+N.B.
+ In many settings it is customary, when referencing equations, to include
+ the equation number within parentheses.
+ This option can be found in the 
+\family typewriter
+\color blue
+Label
+\family default
+\color inherit
+ window, in the 
+\family typewriter
+\color blue
+Format
+\family default
+\color inherit
+ dropdown menu.
+ Clicking the option ``(<reference>)'' will cause the number associated
+ with the selected label to appear within parentheses.
+\end_layout
+
+\begin_layout Subsection
+Hyperlinks
+\end_layout
+
+\begin_layout Standard
+Related to references is LaTeX's handling of hyperlinks (links to websites,
+ e-mails, or files).
+ Insert a hyperlink by clicking the 
+\family typewriter
+\color blue
+Insert hyperlink
+\family default
+\color inherit
+ icon at the top of the LyX document window.
+ A 
+\family typewriter
+\color blue
+Hyperlink
+\family default
+\color inherit
+ window will appear; select the link type (website, e-mail address, or file)
+ and fill in the 
+\family typewriter
+\color blue
+Target
+\family default
+\color inherit
+ (the URL in the case of a website, the e-mail address in the case of an
+ e-mail, or the file extension in the case of a file) and 
+\family typewriter
+\color blue
+Name
+\family default
+\color inherit
+ (the linked text that will appear in your document) fields.
+ Note that if you leave the 
+\family typewriter
+\color blue
+Name
+\family default
+\color inherit
+ field blank, LyX will use whatever you have entered in the 
+\family typewriter
+\color blue
+Target
+\family default
+\color inherit
+ field as the linked text that appears in your document.
+ Also note that, when you click OK in the 
+\family typewriter
+\color blue
+Hyperlink
+\family default
+\color inherit
+ window, what appears in your LyX document is a grey box containing the
+ 
+\family typewriter
+\color blue
+Name
+\family default
+\color inherit
+ of the hyperlink; the actual hyperlink is generated only in the compiled
+ document.
+\end_layout
+
+\begin_layout Standard
+For example, click the 
+\family typewriter
+\color blue
+Insert hyperlink
+\family default
+\color inherit
+ icon and enter the following information:
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+\color blue
+Link type
+\family default
+\color inherit
+: Web
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+\color blue
+Target
+\family default
+\color inherit
+: https://sites.google.com/site/tsewiki/
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+\color blue
+Name
+\family default
+\color inherit
+: https://sites.google.com/site/tsewiki/
+\end_layout
+
+\begin_layout Standard
+The resulting link will appear as 
+\begin_inset CommandInset href
+LatexCommand href
+name "https://sites.google.com/site/tsewiki/"
+target "https://sites.google.com/site/tsewiki/"
+
+\end_inset
+
+.
+ If we leave the 
+\family typewriter
+\color blue
+Name
+\family default
+\color inherit
+ field blank, the resulting link is the same.
+ Finally, if we change the 
+\family typewriter
+\color blue
+Name
+\family default
+\color inherit
+ to TSE Wiki, the resulting link will appear as 
+\begin_inset CommandInset href
+LatexCommand href
+name "TSE Wiki"
+target "https://sites.google.com/site/tsewiki/"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As another example, suppose you want to add a link that, when clicked by
+ a reader, will open a mail window addressed to your e-mail address, say
+ example@fakemail.com.
+ Click the 
+\family typewriter
+\color blue
+Insert hyperlink
+\family default
+\color inherit
+ icon and enter
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+\color blue
+Link type
+\family default
+\color inherit
+: Email
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+\color blue
+Target
+\family default
+\color inherit
+: example@fakemail.com
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+\color blue
+Name
+\family default
+\color inherit
+: example@fakemail.com
+\end_layout
+
+\begin_layout Standard
+The resulting link will appear as 
+\begin_inset CommandInset href
+LatexCommand href
+name "example@fakemail.com"
+target "example@fakemail.com"
+type "mailto:"
+
+\end_inset
+
+.
+ If you compile your LyX document and click on this link, a mail window
+ of your default mail browser will open with ``example@fakemail.com'' filled
+ in as the recipient.
+ Try it out!
+\end_layout
+
+\begin_layout Section
+Figures
+\end_layout
+
+\begin_layout Standard
+To insert a figure, click the 
+\family typewriter
+\color blue
+Insert graphics
+\family default
+\color inherit
+ icon at the top of the LyX document window.
+ A 
+\family typewriter
+\color blue
+Graphics
+\family default
+\color inherit
+ window will appear that allows you to select the image file on your computer
+ and to set several image attributes.
+ Here is an example:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename TSE_Logo.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+
+\noun on
+Note
+\noun default
+: To compile this document you will also need to download 
+\end_layout
+
+\begin_layout Plain Layout
+`TSE_Logo.jpg' and put it in the same folder as the LyX file.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+If you want to change the graphic or its attributes at any time, simply
+ click on the graphic in your LyX document.
+ Note that LyX loads the specified image file each time you compile the
+ document.
+ Thus if you change the attributes of the image (e.g.
+ resize the image), the graphic in your LyX document will change accordingly
+ the next time you compile.
+ If you move the image file to another location on your computer, the graphic
+ box in your LyX document will display the words ``No file found''.
+ For this reason, it is often most convenient to save all graphics used
+ by your LyX document into a ``Graphics'' folder within the folder for your
+ LyX document.
+\end_layout
+
+\begin_layout Standard
+Finally, note that the 
+\family typewriter
+\color blue
+Insert graphics
+\family default
+\color inherit
+ icon does not number the graphic.
+ For numbered figures, use the 
+\family typewriter
+\color blue
+Insert figure float
+\family default
+\color inherit
+ icon; see section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Floats"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Tables
+\end_layout
+
+\begin_layout Standard
+To insert a table, click the 
+\family typewriter
+\color blue
+Insert table
+\family default
+\color inherit
+ icon at the top of the LyX document window.
+ After clicking the icon, drag your mouse to indicate the desired number
+ of rows and columns; note that you can move your mouse beyond the initial
+ 
+\begin_inset Formula $5\times5$
+\end_inset
+
+ grid, to create larger tables.
+\end_layout
+
+\begin_layout Standard
+Once you have inserted the table, move your cursor into the table and fill
+ in the cells.
+ Note that when your text cursor is within the table environment, a table
+ palette pops up at the bottom of the LyX document window, providing you
+ with several options: add or delete rows or colums, put lines between rows
+ or columns, align the text (left, center, right) within columns, ``merge''
+ multiple cells within a row.
+\end_layout
+
+\begin_layout Standard
+By default, tables are set ``inline'' with your body text, as with the following
+ table: 
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+.
+ This is usually not what you want.
+ To put the table on a separate line, simply move your text cursor to just
+ before the table and hit Return on your keyboard.
+ You can then adjust the justification of the table (left, center, right)
+ as desired by clicking the 
+\family typewriter
+\color blue
+Paragraph settings
+\family default
+\color inherit
+ icon at the top of the LyX document window.
+ For example, we have centered the following table, as well as set the text
+ alignment of the columns, added border lines, and merged the two cells
+ above ``Female'' and ``Male'':
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Age Group
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of Visitors
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Price
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Total Revenue
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Female
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Male
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0-11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Free
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+80€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tables in default border style are more often than not ugly (and certainly
+ 
+\emph on
+not
+\emph default
+ what your adviser would expect).
+ In academic papers and books authors usually use a ``formal
+\begin_inset Quotes erd
+\end_inset
+
+ style for the table borders (
+\family typewriter
+\color blue
+Table Context Menu
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Settings
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Borders
+\family default
+\color inherit
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Age Group
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of Visitors
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Price
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Total Revenue
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Female
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Male
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0-11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Free
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+80€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+``Normal
+\begin_inset Quotes erd
+\end_inset
+
+ tables cannot span over several pages.
+ If you have a long table that risks spanning over two or more pages, you
+ need to enable the appropriate setting in 
+\family typewriter
+\color blue
+Table Context Menu
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Settings
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Longtable
+\family default
+\color inherit
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="31" columns="5">
+<features booktabs="true" islongtable="true" longtabularalignment="center">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<row caption="true">
+<cell multicolumn="1" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Longtable with caption and numbering (see section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Floats"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Age Group
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of Visitors
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Price
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Total Revenue
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Female
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Male
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0-11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Free
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12-25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+80€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As with graphics, the 
+\family typewriter
+\color blue
+Insert table
+\family default
+\color inherit
+ icon produces tables that are not numbered.
+ To produce a table as a numbered figure, use the 
+\family typewriter
+\color blue
+Insert table float
+\family default
+\color inherit
+ icon; see section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Floats"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Floats
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Floats"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As already mentioned in the text, one should use floats in order to get
+ numbering and captions associated with figures or tables.
+ For example, below is a numbered and captioned version of the figure above
+ (
+\family typewriter
+\color blue
+Insert Figure
+\family default
+\color inherit
+ 
+\family typewriter
+\color blue
+Float
+\family default
+\color inherit
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename TSE_Logo.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+TSE logo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Floats are often unruly beasts that have a life of their own, and have their
+ own ideas on their own placement in the final output.
+ If default placement style doesn't suit you (very possible), then you should
+ try 
+\family typewriter
+\color blue
+Right-Click on the float label
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Settings
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Uncheck Default placement
+\family default
+\color inherit
+, and then experiment with the available options.
+ For example, you could try asking LaTeX to place floats 
+\family typewriter
+\color blue
+Here if possible
+\family default
+\color inherit
+ (and even to additionally 
+\family typewriter
+\color blue
+Ignore its own rules
+\family default
+\color inherit
+) or 
+\family typewriter
+\color blue
+Here definitely
+\family default
+\color inherit
+.
+ You should experiment and see what works best for your document.
+ You can also alter the defaults in 
+\family typewriter
+\color blue
+Document Settings
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Float placement
+\family default
+\color inherit
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The above holds for tables, too, with one gotcha: longtables cannot live
+ in floats, since floats cannot span over several pages.
+ If you want to get caption and numbering in a longtable, you need to leave
+ an empty line either at the beginning or the end of the table, place the
+ cursor in it, and access 
+\family typewriter
+\color blue
+Table Context Menu
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Settings
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Longtable
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Caption
+\family default
+\color inherit
+.
+\end_layout
+
+\begin_layout Section
+Bibliography
+\end_layout
+
+\begin_layout Standard
+It is very easy to insert citations in LyX using BibTeX.
+ First you need to have a BibTeX bibliography database, which is a fancy
+ name for a simple text file containing references entered in BibTeX format.
+ (You can easily find on-line BibTeX references for just about any paper
+ or book.) Then you would need to follow several steps, in the right order:
+ 
+\end_layout
+
+\begin_layout Enumerate
+In 
+\family typewriter
+\color blue
+Document Settings
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Bibliography
+\family default
+\color inherit
+ choose 
+\family typewriter
+\color blue
+Natbib
+\family default
+\color inherit
+ and then select the style that you prefer.
+\end_layout
+
+\begin_layout Enumerate
+Put the cursor in the precise place of the document where you want the list
+ of references to appear and access
+\family typewriter
+\color blue
+ Insert
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+List/TOC
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+BibTeX 
+\family default
+\color inherit
+
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Add
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Browse
+\family default
+\color inherit
+ and select your BibTeX database.
+ See Page 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "bibtex"
+
+\end_inset
+
+ in the Appendix.
+\end_layout
+
+\begin_layout Enumerate
+In the same dialogue select a style for the bibliography (it's different
+ from the one above), although you could readily stick with the default,
+ and check the 
+\family typewriter
+\color blue
+Add Bibliography to ToC
+\family default
+\color inherit
+ option (if you wish so).
+ Note that not all bibliography styles are compatible with a given set-up,
+ so if the document stops compiling after changing this style, then revert
+ to defaults (`plain' or `plainnat').
+ 
+\end_layout
+
+\begin_layout Enumerate
+Now you can access your citation references using the 
+\family typewriter
+\color blue
+Insert citation
+\family default
+\color inherit
+ button.
+ There you 
+\family typewriter
+\color blue
+Add
+\family default
+\color inherit
+ one or more citations and select a formatting style 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "abbey:slickrock"
+
+\end_inset
+
+.
+ Here's a second example citing 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "abbey:solitaire"
+
+\end_inset
+
+.
+ See Page 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "bibtex"
+
+\end_inset
+
+ for the resulting list of references.
+\end_layout
+
+\begin_layout Enumerate
+With default settings you may get square brackets in the in-line references.
+ One way to work around is to insert 
+\family typewriter
+\color blue
+
+\backslash
+setcitestyle{round}
+\family default
+\color inherit
+ in 
+\family typewriter
+\color blue
+Document Settings
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Preamble
+\family default
+\color inherit
+.
+\end_layout
+
+\begin_layout Standard
+Check the LyX wiki for more resources on 
+\begin_inset CommandInset href
+LatexCommand href
+name "BibTeX"
+target "http://wiki.lyx.org/BibTeX/BibTeX"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Advanced Features
+\end_layout
+
+\begin_layout Subsection
+LaTeX code
+\end_layout
+
+\begin_layout Standard
+It is very easy to insert LaTeX code into your LyX document, effectively
+ allowing you to mix features supported natively by LyX with advanced features
+ available only in LaTeX.
+ To do so, access 
+\family typewriter
+\color blue
+Insert
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+TeX Code
+\family default
+\color inherit
+.
+\end_layout
+
+\begin_layout Standard
+You can also easily view the LaTeX source of any document by accessing 
+\family typewriter
+\color blue
+View
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Source
+\family default
+\color inherit
+.
+ (This should give you yet another incentive to learn LyX instead of LaTeX!
+ Just click on 
+\family typewriter
+\color blue
+Complete source
+\family default
+\color inherit
+ checkbox.)
+\end_layout
+
+\begin_layout Subsection
+Graphics
+\end_layout
+
+\begin_layout Standard
+It is not very difficult to get very nice and precise graphics (nothing
+ that you could ever achieve in MS Paint or Word!) into LyX documents, but
+ you would need to use either LaTeX code or an external tool.
+ Below are several pointers that you should investigate: 
+\end_layout
+
+\begin_layout Description
+TikZ A powerful package for graphics and charts.
+ See their 
+\begin_inset CommandInset href
+LatexCommand href
+name "website"
+target "http://sourceforge.net/projects/pgf/"
+
+\end_inset
+
+ and the comprehensive 
+\begin_inset CommandInset href
+LatexCommand href
+name "documentation"
+target "http://ctan.math.utah.edu/ctan/tex-archive/graphics/pgf/base/doc/generic/pgf/pgfmanual.pdf"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Description
+Xy-pic A tool for constructing simple graphs using nodes and arcs.
+ Check the LyX-specific documentation in 
+\family typewriter
+\color blue
+Help
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Specific
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+
+\family typewriter
+\color blue
+ Xy-pic
+\family default
+\color inherit
+.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+feyn
+\series default
+ A package to create Feynman Diagrams.
+ Check the LyX-specific documentation in 
+\family typewriter
+\color blue
+Help
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Specific
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+
+\family typewriter
+\color blue
+ Feynman-Diagram
+\family default
+\color inherit
+.
+\end_layout
+
+\begin_layout Description
+PSTricks A package for making graphics.
+ Check this 
+\begin_inset CommandInset href
+LatexCommand href
+name "example"
+target "http://wiki.lyx.org/Examples/PSTricks"
+
+\end_inset
+
+ on the LyX wiki.
+ (You may need to use XeTeX to compile documents containing such code, so
+ experiment to see if it works in your case.)
+\end_layout
+
+\begin_layout Description
+Sweave See end of Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Sweave"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For an overview (and examples) of some of these tools, check this 
+\begin_inset CommandInset href
+LatexCommand href
+name "presentation"
+target "http://wiki.lyx.org/uploads/LyX/tutorials/advanced_features_presentation/en/advanced_features_presentation.pdf"
+
+\end_inset
+
+ (and it's 
+\begin_inset CommandInset href
+LatexCommand href
+name "LyX source"
+target "http://wiki.lyx.org/uploads/LyX/tutorials/advanced_features_presentation/en/advanced_features_presentation_source.zip"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Subsection
+Sweave
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Sweave"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With LyX 2.0 it is very easy to embed R code into your LyX documents.
+ You need to have 
+\begin_inset CommandInset href
+LatexCommand href
+name "R"
+target "http://www.r-project.org/"
+
+\end_inset
+
+ installed (and on Windows, 
+\begin_inset CommandInset href
+LatexCommand href
+name "Rtools"
+target "http://www.murdoch-sutherland.com/Rtools/"
+
+\end_inset
+
+).
+ As soon as your system is properly configured, you should enable 
+\family typewriter
+\color blue
+Document Settings
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Modules 
+\family default
+\color inherit
+
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Sweave
+\family default
+\color inherit
+.
+\end_layout
+
+\begin_layout Standard
+Then to perform inline computations you need to use 
+\family typewriter
+\color blue
+Insert
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Custom Insets
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+
+\family typewriter
+\color blue
+ S/R Expression
+\family default
+\color inherit
+.
+ To evaluate code blocks you would need to respect the Sweave syntax as
+ used in LaTeX: access 
+\family typewriter
+\color blue
+Insert
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+TeX Code
+\family default
+\color inherit
+ and then insert something similar to the following: 
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=TRUE, results="verbatim">>= 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+x <- 1:10 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+mean(x) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+@ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For a complete list of options, check the ?RweaveLatex manual in R.
+ In short, you can do in LyX any computation that you can do in R (which
+ is a lot!).
+ You can also use the Sweave mechanism to import your R workspace and thus
+ access and display the results that you've stored within it.
+ (If you want to print R objects into LyX, you will want to investigate
+ two R packages: 
+\family typewriter
+xtable
+\family default
+ and 
+\family typewriter
+Hmisc:::latex()
+\family default
+.)
+\end_layout
+
+\begin_layout Standard
+As a bonus, you can also insert (almost) any type of graph that R can produce
+ (which, surprise, is a lot!); you'd need to insert in figure floats something
+ similar to the following:
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=FALSE,fig=TRUE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+x <- 1:10
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(x)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Unicode and System Fonts
+\end_layout
+
+\begin_layout Standard
+If you are ever in a position to mix different scripts in a single LyX document
+ (say, English, French, Greek, Cyrillic and Chinese), you may want to consider
+ changing the encoding of the document to 'utf8x' (or similar) in the 
+\family typewriter
+\color blue
+Language
+\family default
+\color inherit
+ tab in 
+\family typewriter
+\color blue
+Document Settings
+\family default
+\color inherit
+.
+ But this may generate strange results.
+\end_layout
+
+\begin_layout Standard
+Alternatively, try compiling the document using 
+\family typewriter
+\color blue
+View PDF (XeTeX)
+\family default
+\color inherit
+, which internally uses Unicode encoding, and is much more reliable in mixing
+ exotic scripts.
+ Remember, though, that you need to find a font that actually supports all
+ the glyphs needed.
+ 
+\end_layout
+
+\begin_layout Standard
+As a bonus, in addition to supporting LaTeX fonts, XeTeX also supports system
+ fonts (access 
+\family typewriter
+\color blue
+Document Settings
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Fonts 
+\family default
+\color inherit
+
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Use non-TeX fonts
+\family default
+\color inherit
+).
+ Mind you, though: do 
+\noun on
+not
+\noun default
+ select ``Times New Roman
+\begin_inset Quotes erd
+\end_inset
+
+, ``Arial
+\begin_inset Quotes erd
+\end_inset
+
+ or ``Comic Sans
+\begin_inset Quotes erd
+\end_inset
+
+! If you do so, then there's little point in using LyX (and LaTeX) in the
+ first place! Keep in mind that the LaTeX fonts are high-quality fonts designed
+ for professional looking printed output; simply select a non-default font.
+ 
+\end_layout
+
+\begin_layout Section
+Getting Help
+\end_layout
+
+\begin_layout Standard
+The best way to grow familiar with LyX is to use it! We hope we have convinced
+ you that the essential functions of LyX are extremely intuitive and easy-to-use
+; you will discover additional features the more you use LyX.
+ Still, when you find yourself stumped by something, it can be nice to have
+ some references on hand.
+ The following is a list of internet references that may be helpful in your
+ journey with LyX.
+ 
+\end_layout
+
+\begin_layout Itemize
+The 
+\family typewriter
+\color blue
+Help
+\family default
+\color inherit
+ menu.
+ This should be your main source of documentation! Whenever you want to
+ learn more about a specific topic (Tables, Formatting, Equation, etc.),
+ inspect this menu and open 
+\family typewriter
+\color blue
+User's Guide
+\family default
+\color inherit
+ or 
+\family typewriter
+\color blue
+Math
+\family default
+\color inherit
+, or any other document that seems relevant to your inquiry.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "http://wiki.lyx.org/LyX/LyX"
+
+\end_inset
+
+ --- The LyX Wiki page.
+ About halfway down this webpage you will find the phrase ``Here is an automatic
+ally generated list of pages in this group'', followed by a lengthy list.
+ Browse this list for the topic you seek.
+ Or use the search facilities!
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "http://wiki.lyx.org/LyX/Tutorials"
+
+\end_inset
+
+--- A page containing links to several LyX introductions and tutorials.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "http://wiki.lyx.org/LaTeX/LaTeX"
+
+\end_inset
+
+ --- A page explaining how to use LaTeX within LyX.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "http://wiki.lyx.org/BibTeX/BibTeX"
+
+\end_inset
+
+ --- A page explaining how to use BibTeX within LyX.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "LaTeX WikiBook"
+target "http://en.wikibooks.org/wiki/LaTeX"
+
+\end_inset
+
+ --- A wonderful collection of LaTeX tips and tricks, useful to inspect
+ whenever you need to do something that LyX doesn't support natively.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.youtube.com/watch?v=m4cEAVmLegg"
+
+\end_inset
+
+ --- The first of a five-part video introduction to LyX and LaTeX (on YouTube).
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.google.com/"
+
+\end_inset
+
+--- Or your favorite search engine.
+ Searching ``lyx how to ...'' (fill in the blank as the time demands) can be
+ a very fast and efficient way to find answers to questions that arise during
+ your writing.
+\end_layout
+
+\begin_layout Itemize
+When nothing else works, send an e-mail to the very helfpul 
+\begin_inset CommandInset href
+LatexCommand href
+name "lyx-users"
+target "http://www.lyx.org/MailingLists#toc4"
+
+\end_inset
+
+ mailing list (you should better subscribe first).
+ 
+\end_layout
+
+\begin_layout Standard
+Happy, beautiful typesetting!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\start_of_appendix
+Appendix
+\end_layout
+
+\begin_layout Standard
+To start an appendix, you need to go to the end of your document and select
+ 
+\family typewriter
+\color blue
+Document
+\family default
+\color inherit
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+\color blue
+Start Appendix
+\family default
+\color inherit
+.
+ Notice how Sections start being ``numbered
+\begin_inset Quotes erd
+\end_inset
+
+ with letters.
+ Here you can continue working on your document as before.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "frankenstein"
+options "bibtotoc,plainnat"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "bibtex"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,27 @@
+# Expansion
+
+echo {a,b,c}
+> a b c
+
+echo file_{1..3}
+> file_1 file_2 file_3
+
+echo file_{08..10}
+> file_08 file_09 file_10
+
+echo {1..5..2}
+> 1 3 5
+
+echo {A..C}
+> A B C
+
+echo {a..e..2}
+> a c e
+
+echo {e..a..2}
+> e c a
+
+echo {a,b}{1..3}
+> a1 a2 a3 b1 b2 b3
+
+

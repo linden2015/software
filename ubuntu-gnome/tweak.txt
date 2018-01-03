@@ -1,0 +1,3 @@
+Hide bottom-left tray
+
+* https://extensions.gnome.org/extension/967/hide-legacy-tray/

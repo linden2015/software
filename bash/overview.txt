@@ -1,0 +1,14 @@
+# Overview
+
+## Types of commands
+
+* Aliases
+    
+    Not used in scripts; only interactive shells
+
+* Functions
+* Builtins
+* Keywords
+* Executables
+
+

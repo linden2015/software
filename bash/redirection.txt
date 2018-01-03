@@ -1,0 +1,5 @@
+stdin 0
+stout 1>
+sterr 2>
+both  &>
+

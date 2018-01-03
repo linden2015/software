@@ -1,0 +1,13 @@
+[user]
+	name = Niels van der Linden
+[alias]
+	br = branch --all
+	co = commit
+	fe = fetch --all
+	gr = log --decorate=full --all --graph --source
+	poh = push origin HEAD
+	st = status
+[credential]
+	helper = store
+[core]
+	excludesFile = ~/.gitignore

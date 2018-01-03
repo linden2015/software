@@ -1,0 +1,5 @@
+1. download linux software from manufacturer: http://www.samsung.com/uk/support/model/SL-M2026W/XEU/
+2. execute: sudo ./install-printer.sh
+3. ubuntu -> settings -> printers -> add -> select
+4. remove auto-added generic printer
+DONE

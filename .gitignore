@@ -1,0 +1,6 @@
+!.gitignore
+
+.zedstate
+*.swp
+
+/**/*.netrwhist
