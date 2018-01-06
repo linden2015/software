@@ -10,3 +10,7 @@
 # Help
 
 * [How do I navigate to topics in Vim's documentation?](https://vi.stackexchange.com/a/2137/13453)
+
+# Howtos
+
+* [Best of Vim Tips](http://zzapper.co.uk/vimtips.html)
