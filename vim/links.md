@@ -6,3 +6,7 @@
 # Cheat sheet
 
 * [Vim Commands Cheat Sheet](https://www.fprintf.net/vimCheatSheet.html)
+
+# Help
+
+* [How do I navigate to topics in Vim's documentation?](https://vi.stackexchange.com/a/2137/13453)
