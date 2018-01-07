@@ -14,3 +14,4 @@
 # Howtos
 
 * [Best of Vim Tips](http://zzapper.co.uk/vimtips.html)
+* [Vim Reference](https://github.com/learnbyexample/vim_reference)
