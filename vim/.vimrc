@@ -11,3 +11,4 @@ set autoindent
 set smartindent
 set linebreak
 set showcmd
+set timeoutlen=1000 ttimeoutlen=0
