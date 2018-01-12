@@ -6,6 +6,7 @@
 	fe = fetch --all
 	gr = log --decorate=full --all --graph --source
 	poh = push origin HEAD
+	ro = rev-parse --show-toplevel
 	st = status
 [credential]
 	helper = store
