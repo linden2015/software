@@ -9,6 +9,5 @@
 	ro = rev-parse --show-toplevel
 	st = status
 [credential]
-	helper = store
 [core]
 	excludesFile = ~/.gitignore
