@@ -16,6 +16,7 @@ set number
 " Whitespace
 set shiftwidth=4 softtabstop=4 autoindent expandtab
 set listchars=trail:~,tab:>-
+set list
 
 " Wrapping
 set linebreak
