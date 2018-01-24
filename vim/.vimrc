@@ -13,6 +13,9 @@ set timeoutlen=1000 ttimeoutlen=0
 " Sidebar
 set number
 
+" Spelling
+set spell
+
 " Whitespace
 set shiftwidth=4 softtabstop=4 autoindent expandtab
 set listchars=trail:~,tab:>-
