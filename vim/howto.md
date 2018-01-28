@@ -4,4 +4,14 @@
 
 # Resize a window
 
+## Equal sizes
+
+`Ctrl+W =`
+
+## Specific size
+
 `:resize <window-line-height>`
+
+## Maximum size
+
+`:resize`
