@@ -9,6 +9,11 @@
 
 Source: [Using Spell Checking in Vim](https://www.linux.com/learn/using-spell-checking-vim)
 
+# Jump to next misspelled word
+
+* Forwards: `]s`
+* Backwards: `[s`
+
 # Multiple commands at once in normal mode
 
 `:s/a/b/g | s/c/d/g`
