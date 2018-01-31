@@ -1,3 +1,10 @@
+# Get spelling suggestions
+
+* Move the cursor to the word
+* `z=`
+
+Source: [Using Spell Checking in Vim](https://www.linux.com/learn/using-spell-checking-vim)
+
 # Multiple commands at once in normal mode
 
 `:s/a/b/g | s/c/d/g`
