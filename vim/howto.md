@@ -1,3 +1,7 @@
+# Change the spelling language
+
+* `:set spelllang=nl`
+
 # Get spelling suggestions
 
 * Move the cursor to the word
