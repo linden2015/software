@@ -4,10 +4,13 @@
 	br = branch --all
 	co = commit
 	fe = fetch --all
-	gr = log --decorate=full --all --graph --source
+	gr = log --decorate=full --graph --source
 	poh = push origin HEAD
 	ro = rev-parse --show-toplevel
 	st = status
 [credential]
 [core]
 	excludesFile = ~/.gitignore
+	editor = vim -c \"set spell\" -c \"set spelllang=en\"
+[commit]
+	template = ~/projects/software/git/.git-commit-template

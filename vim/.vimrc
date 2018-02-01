@@ -6,20 +6,28 @@ if &term =~ '256color'
   set t_ut=
 endif
 
+" Errors
+set confirm
+
 " Footer
 set showcmd
 set timeoutlen=1000 ttimeoutlen=0
 
+" Searching files
+set path+=**
+set wildmenu
+
+" Searching inside the current file
+set smartcase
+set wrapscan
+
 " Sidebar
 set number
 
-" Spelling
-set spell
-
 " Whitespace
-set shiftwidth=4 softtabstop=4 autoindent expandtab
-set listchars=trail:~,tab:>-
 set list
+set listchars=trail:~,tab:>-
+set shiftwidth=4 softtabstop=4 autoindent expandtab
 
 " Wrapping
 set linebreak
