@@ -7,3 +7,12 @@ git config --local user.email "<email>"
 ## User level
 
 git config --global user.name "<name>"
+
+# Delete untracked files
+
+`git clean -d --force`
+
+Options:
+
+* `--dry-run`
+* `-d`: include directories
