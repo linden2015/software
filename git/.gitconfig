@@ -5,6 +5,7 @@
 	co = commit
 	fe = fetch --all
 	gr = log --decorate=full --graph --source
+	gra = log --decorate=full --graph --source --all
 	poh = push origin HEAD
 	ro = rev-parse --show-toplevel
 	st = status
