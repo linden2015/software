@@ -3,6 +3,7 @@
 [alias]
 	br = branch --all
 	co = commit
+	dc = diff --cached
 	fe = fetch --all
 	gr = log --decorate=full --graph --source
 	gra = log --decorate=full --graph --source --all

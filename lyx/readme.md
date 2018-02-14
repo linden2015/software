@@ -11,7 +11,7 @@ Source:
 # Add languages
 
 1. apt-cache search texlive dutch
-2. sudo apt install textlive-lang-european 
+2. sudo apt install texlive-lang-european
 
 # Add language checking library to Ubuntu
 
