@@ -2,11 +2,11 @@
 
 ## Repository level
 
-git config --local user.email "<email>"
+`git config --local user.email "<email>"`
 
 ## User level
 
-git config --global user.name "<name>"
+`git config --global user.name "<name>"`
 
 # Delete untracked files
 
@@ -16,3 +16,7 @@ Options:
 
 * `--dry-run`
 * `-d`: include directories
+
+# Track file changes over time
+
+`git log --patch --unified=0 --follow -- <file>`

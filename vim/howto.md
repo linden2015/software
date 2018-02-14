@@ -20,7 +20,7 @@ Source: [Using Spell Checking in Vim](https://www.linux.com/learn/using-spell-ch
 
 # Resize a window
 
-## Equal sizes
+## Equal sizes for all in both directions
 
 `Ctrl+W =`
 

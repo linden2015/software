@@ -1,18 +1,19 @@
 [user]
-	name = Niels van der Linden
+        name = Niels van der Linden
 [alias]
-	br = branch --all
-	co = commit
-	dc = diff --cached
-	fe = fetch --all
-	gr = log --decorate=full --graph --source
-	gra = log --decorate=full --graph --source --all
-	poh = push origin HEAD
-	ro = rev-parse --show-toplevel
-	st = status
+        br = branch --all
+        co = commit
+        di = diff
+        dic = diff --cached
+        fe = fetch --all
+        gr = log --decorate=full --graph --source
+        gra = log --decorate=full --graph --source --all
+        poh = push origin HEAD
+        ro = rev-parse --show-toplevel
+        st = status --short
 [credential]
 [core]
-	excludesFile = ~/.gitignore
-	editor = vim -c \"set spell\" -c \"set spelllang=en\"
+        excludesFile = ~/.gitignore
+        editor = vim -c 'set spell' -c 'set spelllang=en'
 [commit]
-	template = ~/projects/software/git/.git-commit-template
+        template = ~/projects/software/git/.git-commit-template
