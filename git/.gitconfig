@@ -6,6 +6,7 @@
         di = diff
         dic = diff --cached
         fe = fetch --all
+        follow = log --patch --unified=0 --follow --
         gr = log --decorate=full --graph --source
         gra = log --decorate=full --graph --source --all
         poh = push origin HEAD
