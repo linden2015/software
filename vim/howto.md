@@ -25,6 +25,13 @@ Steps:
 
 Source: [Using Spell Checking in Vim](https://www.linux.com/learn/using-spell-checking-vim)
 
+# Join two lines
+
+Steps:
+
+* Select both lines in visual mode
+* Shift + J
+
 # Jump to next misspelled word
 
 * Forwards: `]s`
