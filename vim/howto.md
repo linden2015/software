@@ -1,6 +1,22 @@
+# Autocomplete a word
+
+Insert mode:
+
+* Get suggestions: CTRL+N
+* Next: CTRL+N
+* Previous: CTRL+P
+* Cancel: CTRL+E
+
 # Change the spelling language
 
 * `:set spelllang=nl`
+
+# Change the window layout
+
+Steps:
+
+* Go to a window
+* Force it to a side with CTRL + H/J/K/L (note: uppercase)
 
 # Get spelling suggestions
 
