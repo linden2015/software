@@ -12,6 +12,9 @@
 
 `git clean -d --force`
 
+* `--interactive`
+* `--dry-run`
+
 Options:
 
 * `--dry-run`

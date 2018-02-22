@@ -4,4 +4,4 @@
 *.swp
 
 /**/*.netrwhist
-/vim/spell/*.spl
+/vim/spell/
