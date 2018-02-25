@@ -1,10 +1,7 @@
 " Colors
 colorscheme industry
-if &term =~ '256color'
-  " disable Background Color Erase (BCE) so that color schemes
-  " render properly when inside 256-color tmux and GNU screen.
-  set t_ut=
-endif
+highlight ColorColumn ctermbg=darkgrey
+set colorcolumn=100
 
 " Errors
 set confirm
