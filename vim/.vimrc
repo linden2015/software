@@ -2,6 +2,7 @@
 colorscheme industry
 highlight ColorColumn ctermbg=darkgrey
 set colorcolumn=100
+set t_ut=
 
 " Errors
 set confirm
