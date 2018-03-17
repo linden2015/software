@@ -23,3 +23,11 @@ Options:
 # Track file changes over time
 
 `git log --patch --unified=0 --follow -- <file>`
+
+# Unstage a file
+
+* `git reset -- <paths>`
+
+# Untrack a file
+
+* `git rm --cached -- <file>`
