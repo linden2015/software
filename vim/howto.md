@@ -37,6 +37,12 @@ Steps:
 * Forwards: `]s`
 * Backwards: `[s`
 
+# Paste in insert mode
+
+* `CTRL-R {register}`
+
+Source: <https://stackoverflow.com/a/2861909/8315377>
+
 # Multiple commands at once in normal mode
 
 `:s/a/b/g | s/c/d/g`
