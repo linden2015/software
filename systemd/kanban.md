@@ -6,7 +6,7 @@ To Do:
 * 2: Which Service Owns Which Processes? \
 * 3: How Do I Convert A SysV Init Script Into A systemd Service File? \
 * 4: Killing Services \
-* 5: The Three Levels of "Off"
+* 5: The Three Levels of "Off" \
 * 6: Changing Roots
 * 7: The Blame Game
 * 8: The New Configuration Files
