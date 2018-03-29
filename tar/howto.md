@@ -1,7 +1,7 @@
 # Compress files and folders
 
-* `tar --gzip --create --file archive.tar.gz directory/`
+* `tar --create --checkpoint=1000 directory/ | gzip > output-file.tar.gz`
 
 # Extract archive
 
-* `tar --extract --file <filename>`
+* `gunzip < input-file.tar.gz | tar --extract`
