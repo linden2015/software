@@ -17,6 +17,6 @@
         excludesFile = ~/.gitignore
         editor = vim -c 'set spell' -c 'set spelllang=en'
 [commit]
-        template = ~/projects/software/git/.git-commit-template
+        template = ~/software-meta/git/.git-commit-template
 [rerere]
-	enabled = true
+        enabled = true
