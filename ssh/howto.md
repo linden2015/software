@@ -1,3 +1,9 @@
+# Get a public key fingerprint
+
+* `ssh-keygen -E md5 -lf <fileName>`
+
+Source: https://stackoverflow.com/a/9607373
+
 # Using more than one set of ssh keys on one computer
 
 Links
