@@ -13,7 +13,8 @@
 * List merged branches: `git branch --remotes --merged origin/<branch>`
 * Remove remote branch: `git push origin --delete <branch>`
 * Remove stale remote tracking branches: `git remote prune origin [--dry-run]`
-* List local branches with pruned remote: `git branch -vv | grep gone`
+* List local branches with deleted remote: `git branch --verbose --verbose | grep gone`
+* List local branches without a remote tracking branch: `git branch --verbose --verbose | grep --invert-match origin`
 * Safe delete a local branch: `git checkout master`, `git branch --delete <branch>`
 * Unsafe delete a local branch: `git branch --delete --force <branch>`
 
