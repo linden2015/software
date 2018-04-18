@@ -47,6 +47,12 @@ Source: <https://stackoverflow.com/a/2861909/8315377>
 
 `:s/a/b/g | s/c/d/g`
 
+# Record actions
+
+* begin: q<alphanum>
+* end: q
+* apply: @<alphanum>
+
 # Resize a window
 
 ## Equal sizes for all in both directions
