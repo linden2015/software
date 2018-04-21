@@ -19,7 +19,7 @@ for i in $REMOTE_BRANCHES; do
         MERGED_INTO=$(git describe --contains $i 2> /dev/null)
     else
         IS_MERGED='No'
-        MERGED_INTO='None'
+        MERGED_INTO='N/A'
     fi
     RECENT_ANCESTOR=$(git merge-base origin/master $i | xargs git describe --exact-match 2> /dev/null)
     PRINT_ROWS+="$i|$AUTHOR|$DATE|$IS_MERGED|$MERGED_INTO|$RECENT_ANCESTOR\n"
