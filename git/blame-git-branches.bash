@@ -16,10 +16,11 @@ for i in $REMOTE_BRANCHES; do
     DATE=$(git log -1 --format=format:'%cr' $i)
     if [ $(git branch --remotes --contains $i | grep origin/master | wc -l) -gt 0 ]; then
         IS_MERGED='Yes'
+        PARENT_TAG=$(git describe --contains $i 2> /dev/null)
     else
         IS_MERGED='No'
+        PARENT_TAG=$(git describe $i 2> /dev/null)
     fi
-    PARENT_TAG=$(git describe --contains $i 2> /dev/null)
     RECENT_ANCESTOR=$(git merge-base origin/master $i | xargs git describe --exact-match 2> /dev/null)
     PRINT_ROWS+="$i|$AUTHOR|$DATE|$IS_MERGED|$PARENT_TAG|$RECENT_ANCESTOR\n"
 done
