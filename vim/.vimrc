@@ -19,6 +19,9 @@ set wildmenu
 set smartcase
 set wrapscan
 
+" Shortcuts
+vmap <C-Y> "+y<CR>
+
 " Sidebar
 set number
 
