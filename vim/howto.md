@@ -66,3 +66,20 @@ Source: <https://stackoverflow.com/a/2861909/8315377>
 ## Maximum size
 
 `:resize`
+
+# Rename files to a standard
+
+## Letters to lowercase
+s/\(\w\)/\L\1/g
+
+## Replace spaces with dashes
+s/ /-/g
+
+## Remove special characters
+s/[^a-z1-9-.]//g
+
+## Remove duplicate dashes
+s/-\+/-/g
+
+## Serially applied
+s/\(\w\)/\L\1/ge | s/ /-/ge | s/[^a-z1-9-.]//ge | s/-\+/-/ge
