@@ -6,6 +6,12 @@ Connection info: `nmcli`
 
 Edit, activate connections: `nmtui`
 
+### Screen capture
+
+Launcher > `gnome-screenshot`
+
+Check man pages for options.
+
 ## Status bar
 
 See i3status config
